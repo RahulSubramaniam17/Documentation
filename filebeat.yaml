@@ -1,0 +1,8 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /log/bv.log 
+    - /log/requests.log
+output.elasticsearch:
+  hosts: ["http://124.123.83.241:9200"]
